@@ -62,6 +62,7 @@ function celsiusa_Fahrenheit() {
         alert("Error! Adicione valores válidos.")
     }
 }
+
 function pascal_Bar() {
     if(result.value != ""){
         var bar = result.value / 100000;
@@ -75,6 +76,22 @@ function pascal_Bar() {
         alert("Error! Adicione valores válidos.")
     }
 }
+
+function kilos_Gramos() {
+    if(result.value != ""){
+        var gramos = result.value * 1000;
+        conversion.value = gramos
+        var texto1 = "Kilogramo"
+        var texto2 = "Gramo"
+        document.getElementById("etiqueta1").textContent=texto1;
+        document.getElementById("etiqueta2").textContent=texto2;
+        
+    } else{
+        alert("Error! Adicione valores válidos.")
+    }
+}
+
+
 
 /*
     ====================================================
