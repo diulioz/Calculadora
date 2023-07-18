@@ -224,3 +224,7 @@ input[type=range]::-ms-thumb {
 }
 
 /* ======================= Theme 2 ======================= */
+#etiqueta1,
+#etiqueta2 {
+  text-align: left;
+}

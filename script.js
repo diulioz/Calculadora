@@ -20,7 +20,7 @@ function calc(){
         let result2  = result.value;
         result.value = eval(result2)
     } else{
-        alert("Erro! Adicione valores válidos.")
+        alert("Error! Adicione valores válidos.")
     }
 }
 
@@ -29,6 +29,7 @@ function reset(){
     result.value = "";
 }
 function reset2(){
+    result.value = "";
     conversion.value = "";
 }
 
@@ -52,8 +53,13 @@ function celsiusa_Fahrenheit() {
     if(result.value != ""){
         var fahrenheit = (result.value * 9/5) + 32;
         conversion.value = fahrenheit
+        var texto1 = "Grado Celsius"
+        var texto2 = "Grado Fahrenheit"
+        document.getElementById("etiqueta1").textContent=texto1;
+        document.getElementById("etiqueta2").textContent=texto2;
+        
     } else{
-        alert("Erro! Adicione valores válidos.")
+        alert("Error! Adicione valores válidos.")
     }
 }
 
