@@ -91,7 +91,19 @@ function kilos_Gramos() {
     }
 }
 
-
+function metros_Centimetros() {
+    if(result.value != ""){
+        var centimetros = result.value * 100;
+        conversion.value = centimetros
+        var texto1 = "Metro"
+        var texto2 = "Centímetro"
+        document.getElementById("etiqueta1").textContent=texto1;
+        document.getElementById("etiqueta2").textContent=texto2;
+        
+    } else{
+        alert("Error! Adicione valores válidos.")
+    }
+}
 
 /*
     ====================================================
