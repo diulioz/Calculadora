@@ -34,6 +34,14 @@ function del(){
     result.value = result2.substring(0, result2.length - 1);
 }
 
+//REDIRIGIR
+function redirigirInicio(){
+    window.location.href = "index.html";
+}
+function redirigirConversor() {
+    window.location.href = "index2.html";
+}
+
 /*
     ====================================================
     =================== TOGGLE THEME ===================
