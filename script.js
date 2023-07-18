@@ -62,6 +62,19 @@ function celsiusa_Fahrenheit() {
         alert("Error! Adicione valores válidos.")
     }
 }
+function pascal_Bar() {
+    if(result.value != ""){
+        var bar = result.value / 100000;
+        conversion.value = bar
+        var texto1 = "Pascal"
+        var texto2 = "Bar"
+        document.getElementById("etiqueta1").textContent=texto1;
+        document.getElementById("etiqueta2").textContent=texto2;
+        
+    } else{
+        alert("Error! Adicione valores válidos.")
+    }
+}
 
 /*
     ====================================================
