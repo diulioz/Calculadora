@@ -6,6 +6,7 @@
 
 // get the result element
 let result  = document.getElementById("result");
+let conversion  = document.getElementById("conversion");
 
 // Input numbers by key pressed
 function input(num){
@@ -27,6 +28,9 @@ function calc(){
 function reset(){
     result.value = "";
 }
+function reset2(){
+    conversion.value = "";
+}
 
 // Del button
 function del(){
@@ -40,6 +44,17 @@ function redirigirInicio(){
 }
 function redirigirConversor() {
     window.location.href = "index2.html";
+}
+
+//CONVERSIÓN
+
+function celsiusa_Fahrenheit() {
+    if(result.value != ""){
+        var fahrenheit = (result.value * 9/5) + 32;
+        conversion.value = fahrenheit
+    } else{
+        alert("Erro! Adicione valores válidos.")
+    }
 }
 
 /*

@@ -57,6 +57,7 @@
                     <!-- Input to put the results  -->
                     <div class="calc-top-result row">
                         <input type="text" class="col-12" id="result" placeholder="0" disabled></input>
+                        <input type="text" class="col-12" id="conversion" placeholder="0" disabled></input>
                     </div>
                 </div>
 
@@ -66,31 +67,35 @@
                     <!-- All the Keys/Buttons for the Calculator Works -->
                     <div class="container">
                         <div class="row">
+                            <input class="col" type="button" value="Temperatura" onclick="celsiusa_Fahrenheit()">
+                            <input class="col" type="button" value="Presión" onclick="input('8')">
+                        </div>
+                        <div class="row">
+                            <input class="col" type="button" value="Masa" onclick="input('9')">
+                            <input class="col" type="button" value="Longitud" onclick="input('9')">
+                        </div>
+                        <div class="row">
                             <input class="col" type="button" value="7" onclick="input('7')">
                             <input class="col" type="button" value="8" onclick="input('8')">
                             <input class="col" type="button" value="9" onclick="input('9')">
-                            <input class="col" type="button" value="Borrar" id="del" onclick="del()">
                         </div>
                         <div class="row">
                             <input class="col" type="button" value="4" onclick="input('4')">
                             <input class="col" type="button" value="5" onclick="input('5')">
                             <input class="col" type="button" value="6" onclick="input('6')">
-                            <input class="col" type="button" value="+" onclick="input('+')">
                         </div>
                         <div class="row">
                             <input class="col" type="button" value="1" onclick="input('1')">
                             <input class="col" type="button" value="2" onclick="input('2')">
                             <input class="col" type="button" value="3" onclick="input('3')">
-                            <input class="col" type="button" value="-" onclick="input('-')">
                         </div>
                         <div class="row">
                             <input class="col" type="button" value="." onclick="input('.')">
                             <input class="col" type="button" value="0" onclick="input('0')">
-                            <input class="col" type="button" value="/" onclick="input('/')">
-                            <input class="col" type="button" value="x" onclick="input('*')">
+                            <input class="col" type="button" value="Borrar" id="del" onclick="del()">
                         </div>
                         <div class="row">
-                            <input class="col" type="button" value="REINICIAR" id="reset" onclick="reset()">
+                            <input class="col" type="button" value="REINICIAR" id="reset" onclick="reset2()">
                             <input class="col" type="button" value="=" id="equals" onclick="calc()">
                             <input class="col" type="button" value="REGRESAR" id="equals" onclick="redirigirInicio()">
                         </div>
